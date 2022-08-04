@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="122072" started-at="2022-08-02T01:51:25Z" finished-at="2022-08-02T01:53:28Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:zoho.runner.MyRunner@335eadca]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="122072" started-at="2022-08-02T01:51:25Z" finished-at="2022-08-02T01:53:28Z">
+      <class name="zoho.runner.MyRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:zoho.runner.MyRunner@335eadca]" name="setUpClass" is-config="true" duration-ms="4555" started-at="2022-08-01T21:51:26Z" finished-at="2022-08-01T21:51:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:zoho.runner.MyRunner@335eadca]" name="runScenario" duration-ms="75543" started-at="2022-08-01T21:51:30Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-01T21:52:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Creation of a lead"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Managing leads]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Object not found crm_xpath]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Object not found crm_xpath
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at zoho.managers.WebDriverManager.quit(WebDriverManager.java:293)
+	at zoho.managers.WebDriverManager.reportFailure(WebDriverManager.java:225)
+	at zoho.managers.WebDriverManager.findElement(WebDriverManager.java:154)
+	at zoho.managers.WebDriverManager.click(WebDriverManager.java:130)
+	at zoho.pages.LoginPage.doLogin(LoginPage.java:23)
+	at zoho.teststeps.Session.zohoLogin(Session.java:26)
+	at ✽.I am logged in zoho.com(file:///C:/workspace/ZohoCucumberNew/src/test/resources/zoho/leads.feature:25)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:zoho.runner.MyRunner@335eadca]" name="runScenario" duration-ms="41312" started-at="2022-08-01T21:52:46Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-01T21:53:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Deletion of the lead"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Managing leads]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Object not found crm_xpath]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Object not found crm_xpath
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at zoho.managers.WebDriverManager.quit(WebDriverManager.java:293)
+	at zoho.managers.WebDriverManager.reportFailure(WebDriverManager.java:225)
+	at zoho.managers.WebDriverManager.findElement(WebDriverManager.java:154)
+	at zoho.managers.WebDriverManager.click(WebDriverManager.java:130)
+	at zoho.pages.LoginPage.doLogin(LoginPage.java:23)
+	at zoho.teststeps.Session.zohoLogin(Session.java:26)
+	at ✽.I am logged in zoho.com(file:///C:/workspace/ZohoCucumberNew/src/test/resources/zoho/leads.feature:25)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:zoho.runner.MyRunner@335eadca]" name="tearDownClass" is-config="true" duration-ms="452" started-at="2022-08-01T21:53:27Z" finished-at="2022-08-01T21:53:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- zoho.runner.MyRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
